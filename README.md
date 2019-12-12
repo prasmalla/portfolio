@@ -1,12 +1,15 @@
-# Gatsby Starter Portfolio (JSON)
+# Gatsby Starter Portfolio (sanity.io)
 
 ```
 npm i -g gatsby-cli
+npm i -g @sanity/cli
 gatsby new <NAME> <STARTER_URL>
-npm i gatsby-image gatsby-plugin-sharp gatsby-source-filesystem gatsby-transformer-json gatsby-transformer-sharp
-mkdir data
-mkdir data/images
-touch data/projects.json
+sanity init
+cd <SANITY_FOLDER>
+touch schemas/project.js
+sanity start
+sanity graphql deploy
+cd ..
 mkdir src/components
 touch src/components/layout.js
 touch src/components/layout.css
@@ -17,27 +20,6 @@ touch src/templates/project.js
 touch src/components/project.js
 ```
 
-data/projects.json
-```
-[
-  {
-    "title": "project 1",
-    "slug": "project-1",
-    "url": "",
-    "image": "./images/logo-1.png",
-    "tags": ["React", "NodeJS"],
-    "description": ""
-  },
-  {
-    "title": "project 2",
-    "slug": "project-2",
-    "url": "",
-    "image": "./images/logo-2.png",
-    "tags": ["ExpressJS", "MongoDB"],
-    "description": ""
-  }
-]
-```
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
