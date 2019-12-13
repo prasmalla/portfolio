@@ -4,12 +4,12 @@ import { Link } from "gatsby"
 import "./layout.css"
 
 const Layout = ({ children }) => (
-  <React.Fragment>
+  <>
     <header className="header">
-      <Link to="/">My Portfolio</Link>
+      <Link to="/">Prasanna Malla</Link>
     </header>
-    <main className="content">{ children }</main>
-  </React.Fragment>
+    <main className="content">{children}</main>
+  </>
 )
 
 export default Layout
